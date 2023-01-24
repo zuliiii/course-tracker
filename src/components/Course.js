@@ -3,7 +3,7 @@ import React from 'react'
 const Course = ({ course, refreshCourses }) => {
     const markCoursePurchased = async () => {
         try {
-            await fetch('/.netlify/functions/courses', {
+            await fetch('https://course-tracker.zuleyxasuleymanova.workers.dev/', {
                 method: 'PUT',
                 body: JSON.stringify({ ...course, purchased: true }),
             });
@@ -15,9 +15,8 @@ const Course = ({ course, refreshCourses }) => {
 
     const deleteCourse = async () => {
         try {
-            await fetch('/.netlify/functions/courses', {
+            await fetch('https://course-tracker.zuleyxasuleymanova.workers.dev/', {
                 method: 'DELETE',
-                body: JSON.stringify({ id: course.id }),
             });
             refreshCourses();
         } catch (err) {

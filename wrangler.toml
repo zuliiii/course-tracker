@@ -1,0 +1,13 @@
+main = "functions/courses.js"
+name = "course-tracker"
+type = "javascript"
+
+compatibility_date = "2023-01-22"
+
+account_id = "e87c4fc19e7e2d0becae173112809d75"
+workers_dev = true
+
+[vars]
+AIRTABLE_BASE_ID = "appsCfhuuWmDBO7Pp"
+AIRTABLE_TABLE_NAME = "Course tracker"
+FORM_URL = "https://a2dfe5dc.course-tracker-35p.pages.dev/"
